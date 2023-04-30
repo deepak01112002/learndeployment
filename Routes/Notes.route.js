@@ -18,7 +18,7 @@ NoteRoute.post("/addNote",auth,async(req,res)=>{
     try {
         const da = new NoteModel(req.body)
         await da.save()
-        res.send("Note is Added")
+        res.send("Note is        Added")
         
     } catch (error) {
         res.send("Some data not found")
